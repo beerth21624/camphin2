@@ -2,9 +2,11 @@ import React from "react";
 import { signOut, getAuth } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import firebaseApp from "../configs/firebaseApp";
+import useSession from "../hooks/useSession";
 
 const Headbar = () => {
     const navigate = useNavigate();
+    const { user, loading } = useSession();
 
     function changePage(page) {
         navigate(page);
@@ -12,11 +14,13 @@ const Headbar = () => {
 
     const logOut = async () => {
         const auth = getAuth(firebaseApp);
-        signOut(auth).then(() => {
-            window.location.reload();
-          }).catch((error) => {
-            // An error happened.
-          });
+        signOut(auth)
+            .then(() => {
+                window.location.reload();
+            })
+            .catch((error) => {
+                // An error happened.
+            });
     };
     return (
         <div className="headbar-container d-flex flex-column pt-5 gap-3">
@@ -34,9 +38,21 @@ const Headbar = () => {
                     <p className="menu">COMMUNITY</p>
                     <p className="menu">ABOUT US</p>
                     <p className="menu">SHOP</p>
-                    <p onClick={() => logOut()} className="menu">
-                        LOGOUT
-                    </p>
+                    {!loading ? (
+                        <>
+                            {user ? (
+                                <p onClick={() => logOut()} className="menu">
+                                    LOGOUT
+                                </p>
+                            ) : (
+                                <p onClick={() => navigate("/login")} className="menu">
+                                    LOGIN
+                                </p>
+                            )}
+                        </>
+                    ) : (
+                        ""
+                    )}
                 </div>
             </div>
         </div>
