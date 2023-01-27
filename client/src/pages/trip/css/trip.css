@@ -323,7 +323,7 @@
 }
 .create-trip .input-box textarea {
   width: 100%;
-  height: 40px;
+  height: 400px;
   resize: none;
   outline: none;
   border: none;
@@ -332,4 +332,22 @@
   font-size: 1rem;
   font-weight: 300;
   font-family: "Kanit", sans-serif !important;
+}
+.create-trip .input-box .add-include-btn {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #58791a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+  cursor: pointer;
+}
+.create-trip .input-box .add-include-btn:hover {
+  background-color: #58791a;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=trip.css.map */
