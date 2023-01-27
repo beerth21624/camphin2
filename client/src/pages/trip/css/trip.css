@@ -1,0 +1,323 @@
+.task-card {
+  padding: 0 5%;
+  height: 150px;
+  border-radius: 50px;
+  background-color: #fdeed3;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+.task-card > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-card > div .item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.task-card > div .item p {
+  margin-bottom: 0px !important;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Kanit", sans-serif !important;
+}
+.task-card > div .item select,
+.task-card > div .item input {
+  background-color: rgb(220, 212, 212);
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.task-card > div .item button {
+  background-color: #85dfd8;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-top: 19px;
+}
+
+.card-trip {
+  height: 370px;
+  width: 31%;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card-trip .image {
+  background: url("https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+.card-trip .detail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 10px;
+}
+.card-trip .detail .title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+.card-trip .detail .price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-trip .detail .price-container span:nth-child(1) {
+  color: #464e37;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+.card-trip .detail .price-container span:nth-child(2) {
+  color: #6b6b6a;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+
+.card-trip:hover {
+  transform: scale(1.07);
+  transition: all 0.3s ease-in-out;
+  filter: brightness(1.3);
+}
+
+.trip-detail-container {
+  width: 90%;
+  background-color: #f2ead6;
+  min-height: 96vh;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+.trip-detail-container .title {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+.trip-detail-container .title-price-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 0.409);
+  border-radius: 20px;
+  padding: 30px;
+  margin-right: 45px;
+  line-height: 1.5rem;
+}
+.trip-detail-container .title-price-container .title-price {
+  margin: auto;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #58791a;
+  font-family: "Kanit", sans-serif !important;
+}
+.trip-detail-container .title-price-container .title-price-detail {
+  margin: auto;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  gap: 20px;
+}
+.header .header-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header .header-item .header-item-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f2ead6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .header-item .header-item-icon:hover {
+  background-color: #f2ead6;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.image {
+  width: 95%;
+  height: 450px;
+  border-radius: 30px;
+}
+
+.topic {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+  margin: 20px 0;
+}
+
+.desc {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+
+.include {
+  width: 95%;
+  background-color: rgba(217, 217, 217, 0.409);
+  border-radius: 20px;
+  padding: 30px;
+}
+.include .include-item {
+  color: #58791a;
+}
+
+.section-2 {
+  padding-top: 170px;
+}
+.section-2 .create-box {
+  width: 95%;
+  background-color: rgba(217, 217, 217, 0.409);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section-2 .create-box img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-2 .ad {
+  width: 95%;
+  height: 400px;
+  background-color: rgba(217, 217, 217, 0.409);
+  border-radius: 20px;
+  display: flex;
+}
+.section-2 .ad .ad-item {
+  margin: auto;
+  color: #58791a;
+  font-size: 1.5rem;
+}
+.section-2 .join {
+  width: 95%;
+  background-color: rgba(217, 217, 217, 0.409);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.section-2 .join .join-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+.section-2 .join .count {
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+  color: #58791a;
+}
+.section-2 .join .image-person {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-2 .join .price {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+  color: #58791a;
+}
+.section-2 .join .join-btn {
+  padding: 7px 30px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: #58791a;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+  cursor: pointer;
+}
+.section-2 .join .join-btn:hover {
+  background-color: #58791a;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.create-trip .title {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+.create-trip .upload-image {
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.409);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 500px;
+  display: flex;
+}
+.create-trip .upload-image .upload-image-content {
+  margin: auto;
+  color: #58791a;
+  font-size: 1.3rem;
+  display: flex;
+}
+.create-trip .upload-image:hover {
+  background-color: rgba(196, 196, 196, 0.581);
+}
+.create-trip .image-input {
+  display: none;
+}
+.create-trip .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.create-trip .input-box label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+.create-trip .input-box input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}/*# sourceMappingURL=trip.css.map */

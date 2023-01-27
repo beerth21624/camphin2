@@ -1,0 +1,32 @@
+.header-container {
+  width: 100%;
+  height: calc(100vh - 56px);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .header-content {
+  color: white;
+  text-align: center;
+}
+.header-container .header-content h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  font-family: "Grand Hotel", sans-serif !important;
+}
+.header-container .header-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+}
+.header-container .header_btn {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif !important;
+  background-color: #f50057;
+}/*# sourceMappingURL=header.css.map */

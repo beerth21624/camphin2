@@ -1,0 +1,30 @@
+.main{
+    font-family: 'Kanit', sans-serif ;
+    background-color: #F8DB94;
+    min-height: 100vh;
+
+
+
+
+}
+    .headbar-container{}
+    
+ .logo{
+    font-family: 'luckiest guy', cursive !important;
+    font-size: 50px;
+        color:'#464E37'
+ }
+ .menu{
+    font-family: 'Kanit', sans-serif ;
+    font-size: 22px;
+    color:'#464E37';
+    curse: pointer;
+
+ }
+ .layout-container{
+      width: 90%;
+  background-color: #f2ead6;
+  min-height: 96vh;
+  border-radius: 30px;
+ }
+

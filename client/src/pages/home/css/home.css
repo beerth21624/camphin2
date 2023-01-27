@@ -1,0 +1,44 @@
+.home-container {
+  min-height: 100vh;
+}
+.home-container .card-container {
+  width: 30%;
+  height: 400px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 2%;
+  display: flex;
+  align-items: flex-end;
+}
+.home-container .card-container .card-content {
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8%;
+  line-height: 20px;
+  height: 50%;
+  position: relative;
+}
+.home-container .card-container .card-content .rate-container {
+  background-color: #3d7bcc;
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-container .card-container .card-content .rate-container .star {
+  width: 15px;
+  height: 15px;
+  color: white;
+}
+.home-container .card-container .card-content .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}/*# sourceMappingURL=home.css.map */
