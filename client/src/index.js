@@ -5,6 +5,7 @@ import App from "./App";
 import Home from "./pages/home/Home";
 import Trip from "./pages/trip/Trip";
 import CreateTrip from "./pages/trip/CreateTrip";
+import WithNavabar from "./layout/WithNavabar";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <WithNavabar>
+            <RouterProvider router={router} />
+        </WithNavabar>
     </React.StrictMode>
 );
