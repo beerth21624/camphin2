@@ -8,25 +8,35 @@ import CreateTrip from "./pages/trip/CreateTrip";
 import WithNavabar from "./layout/WithNavabar";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Home />,
-    },
-    {
-        path: "/trip",
-        element: <Trip />,
-    },
-    {
-        path: "/create-trip",
-        element: <CreateTrip />,
-    },
-]);
+  {
+    path: '/',
+    element: (
+      <WithNavabar>
+        <Home />
+      </WithNavabar>
+    ),
+  },
+  {
+    path: '/trip',
+    element: (
+      <WithNavabar>
+        <Trip />
+      </WithNavabar>
+    ),
+  },
+  {
+    path: '/create-trip',
+    element: (
+      <WithNavabar>
+        <CreateTrip />
+      </WithNavabar>
+    ),
+  },
+])
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-    <React.StrictMode>
-        <WithNavabar>
-            <RouterProvider router={router} />
-        </WithNavabar>
-    </React.StrictMode>
-);
+  <React.StrictMode>
+    <RouterProvider router={router}></RouterProvider>
+  </React.StrictMode>
+)

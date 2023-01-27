@@ -4,7 +4,6 @@ import Trip from './pages/trip/Trip'
 import TripDetail from './pages/trip/TripDetail'
 import CreateTrip from './pages/trip/CreateTrip'
 import Navbar from './components/Navbar'
-
 import './App.css'
 import Headbar from './components/Headbar'
 function App() {

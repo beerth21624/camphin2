@@ -9,7 +9,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 const CardTrip = () => {
   return (
     <div className="card-trip ">
-      <div className="image"></div>
+      <div className="image-card-trip"></div>
       <div className="detail">
         <p className="title">ทริปพักผ่อน ku startup</p>
         <div className="d-flex align-items-center gap-2">
