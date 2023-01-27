@@ -7,41 +7,44 @@ import Trip from "./pages/trip/Trip";
 import CreateTrip from "./pages/trip/CreateTrip";
 import WithNavabar from "./layout/WithNavabar";
 import Login from "./pages/login/login";
+import LayoutWithGuard from "./layout/LayoutWithGuard";
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: (
-      <WithNavabar>
-        <Home />
-      </WithNavabar>
-    ),
-  },
-  {
-    path: '/trip',
-    element: (
-      <WithNavabar>
-        <Trip />
-      </WithNavabar>
-    ),
-  },
-  {
-    path: '/create-trip',
-    element: (
-      <WithNavabar>
-        <CreateTrip />
-      </WithNavabar>
-    ),
-  },
-  {
-    path: '/login',
-    element: <Login />,
-  },
-])
+    {
+        path: "/",
+        element: (
+            <WithNavabar>
+                <Home />
+            </WithNavabar>
+        ),
+    },
+    {
+        path: "/trip",
+        element: (
+            <WithNavabar>
+                <Trip />
+            </WithNavabar>
+        ),
+    },
+    {
+        path: "/create-trip",
+        element: (
+            <LayoutWithGuard>
+                <WithNavabar>
+                    <CreateTrip />
+                </WithNavabar>
+            </LayoutWithGuard>
+        ),
+    },
+    {
+        path: "/login",
+        element: <Login />,
+    },
+]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
-  </React.StrictMode>
-)
+    <React.StrictMode>
+        <RouterProvider router={router}></RouterProvider>
+    </React.StrictMode>
+);
